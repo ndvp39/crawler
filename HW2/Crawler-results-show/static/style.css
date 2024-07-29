@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #4caf50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Added to ensure table fits within the container */
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    font-size: 0.9em; /* Reduced font size */
+}
+
+th,
+td {
+    padding: 4px; /* Reduced padding */
+    text-align: left;
+    word-wrap: break-word; /* Added to ensure content wraps within cells */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label,
+input[type="text"],
+button {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
