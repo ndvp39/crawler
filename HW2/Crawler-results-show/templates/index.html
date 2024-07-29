@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Welcome to Result Wizards</h2>
+<p>Select a query:</p>
+<ul>
+    <li><a href="{{ url_for('show_file1') }}">Average Runtime per Genre</a></li>
+    <li><a href="{{ url_for('show_file2') }}">Best Box Office per Genre</a></li>
+    <li><a href="{{ url_for('show_file3') }}">Best Directors</a></li>
+    <li><a href="{{ url_for('show_file4') }}">Best Directors Upgrade</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Best Directors Upgrade</h2>
+<form action="/submit" method="post">
+    <table>
+        <thead>
+            <tr>
+                {% for col in file4.columns %}
+                <th>{{ col }}</th>
+                {% endfor %}
+                <th>Relevant</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in file4.iterrows() %}
+            <tr>
+                {% for col in file4.columns %}
+                <td>{{ row[col] }}</td>
+                {% endfor %}
+                <td>
+                    <input
+                        type="radio"
+                        name="relevant_{{ index }}"
+                        value="relevant"
+                        required
+                    />
+                    Relevant
+                    <input
+                        type="radio"
+                        name="relevant_{{ index }}"
+                        value="not_relevant"
+                    />
+                    Not Relevant
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <label for="filename">Enter filename to save:</label>
+    <input type="text" name="filename" required />
+    <br /><br />
+    <button type="submit">Submit</button>
+</form>
+<p><a href="{{ url_for('index') }}">Back to Home</a></p>
+{% endblock %}

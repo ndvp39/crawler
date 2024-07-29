@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result Wizards</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+    <body>
+        <div class="header">
+            <h1>Result Wizards</h1>
+            <p>Your ultimate Crawler</p>
+        </div>
+        <div class="content">{% block content %}{% endblock %}</div>
+        <div class="footer">
+            <p>&copy; 2024 Result Wizards. All rights reserved.</p>
+        </div>
+    </body>
+</html>
