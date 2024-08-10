@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    <style>
+        .back-to-top-button { 
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+            border-radius: 25px;
+            padding: 8px 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .back-to-top-button:hover {
+            background-color: #61615e;
+            color: #f0f0f0;
+        }
+    </style>
     <header class="bg-info text-white text-center py-4">
         <h1>Result Wizards</h1>
     </header>
@@ -68,8 +85,11 @@
             </p>
     
             <a href="https://www.rottentomatoes.com/" target="_blank" class="mt-2 d-block text-center">Rotten Tomatoes</a>
+            <br>
             
-            <a href="#" class="card-link">Back to Top</a>
+            <div class="text-center">
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
     
@@ -102,21 +122,23 @@
         
             
         </div>
-        <a href="#" class="card-link">Back to Top</a>
+        <div class="text-center mb-3">
+            <a href="#" class="back-to-top-button ">Back to Top</a>   
+        </div>
     </div>
     
     
 
-    <div class="card mb-4">
+    <div class="card mb-5">
         <div class="card-body text-center" id="view_3">
             
-            <div class="mb-3">
+            <div class="mb-1">
                 <a href="https://colab.research.google.com/drive/1o4iye5_s1s5w8DLF-G8-WUXQM6TKTxEf#scrollTo=XAFCjY9QuYnO" class="btn btn-info" target="_blank">Link to Crawler Code</a>
             </div>
-            
-            
         </div>
-        <a href="#" class="card-link">Back to Top</a>
+        <div class="text-center mb-3">
+            <a href="#" class="back-to-top-button ">Back to Top</a>   
+        </div>
     </div>
     
 
@@ -150,7 +172,10 @@
                 </ul>
             </div>
     
-            <a href="#" class="card-link">Back to Top</a>
+            <div class="text-center">
+                <br><br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
     
@@ -178,7 +203,10 @@
                 </ul>
             </div>
     
-            <a href="#" class="card-link">Back to Top</a>
+            <div class="text-center">
+                <br><br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
     
@@ -186,41 +214,144 @@
 
     <div class="card mb-4">
         <div class="card-body" id="view_6">
-            <h5 class="card-title">Title</h5>
-
-            <a href="#" class="card-link">Back to Top</a>
+            <h5 class="card-title text-center">Index and Inverted Index</h5>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/inverted_index.jpg" alt="inverted_index">
+            </div>
+            <div style="text-align: center; margin-bottom: 1rem;">
+                <br>
+                <a href="https://drive.google.com/drive/folders/1Nd3ITyDM8f03vOzj511P4MyTjWTMnkl1?usp=sharing" class="btn btn-info" target="_blank">Link to Our Drive</a>
+                
+            </div>            
+            <div class="text-center">
+                <br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
 
     <div class="card mb-4">
         <div class="card-body" id="view_7">
-            <h5 class="card-title">Title</h5>
+            <h5 class="card-title text-center">TF-IDF for : Which movies have the best directors?</h5>
+            <p>We will perform the calculations in an Excel calculation file on the CALCS page.<br>
+                First, we will organize so that for each concept in the query (after remove stop words and endings), 
+                the number of its appearances in each document will appear (taken from the index).<br>
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/term_in_doc.png" alt="term_in_doc">
+            </div>
+            <p><br>After that, we will find the total number of words in each document, the amount of documents returned, and the amount of terms in the query.
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/word_in_each_doc.png" alt="word_in_each_doc">
+            </div>
+            <p><br>We will build a table that contains the number of occurrences of each concept in the query on all pages:
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 40%;" src="images/term_all_docs.png" alt="term_all_docs">
+            </div>
+            <p><br>Calculates DF - the number of documents in which each term appears:
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 40%;" src="images/DF.png" alt="df">
+            </div>
+            <p><br>Calculates TF :
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 70%;" src="images/TF.png" alt="tf">
+            </div>
+            
+            <p><br>Calculates IDF :
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 50%;" src="images/IDF.png" alt="idf">
+            </div>
 
-            <a href="#" class="card-link">Back to Top</a>
+            <p><br>Calculates TF - IDF :
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/TF-IDF.png" alt="tf-idf">
+            </div>
+            <div class="text-center">
+                <br><br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
 
     <div class="card mb-4">
         <div class="card-body" id="view_8">
-            <h5 class="card-title">Title</h5>
-
-            <a href="#" class="card-link">Back to Top</a>
+            <h5 class="card-title text-center">Hubs and Authorities</h5>
+            <p>In the returned pages there are 'Hubs'.<br>
+            This can be seen in the way that on every page of a movie, there are the recommended movies to watch, 
+            so that every movie has access to the most recommended movies<br>
+            which means that you can access these (recommended) pages from every page of a movie on rotten tomatoes.<br><br>
+            You can see that there are also 'Authorities' in the returned pages and that are the recommended movie pages. <br>
+            It seems that every recommended movie from the list can be accessed by other movie pages because the recommended movies appear on every movie page.</p>
+            <div class="text-center">
+                <br><br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
 
     <div class="card mb-4">
         <div class="card-body" id="view_9">
-            <h5 class="card-title">Title</h5>
+            <h5 class="card-title text-center">PageRank</h5>
+            <p>We took 10 pages of movies returned from the query:<br></p>
+            <h5 class="text-center">Which movies have the best directors. </h5>
+            <p>And this is the PageRank score of them: <br></p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/pagerank.png" alt="pagerank">
+            </div>
+            <p><br>You can see that the highest PageRank score we got is for the movie:</p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 15%;" src="images/journey-2.png" alt="journey-2">
+            </div><br>
+            <h5 class="text-center">Journey 2: The Mysterious Island</h5><br>
 
-            <a href="#" class="card-link">Back to Top</a>
+            <p>We used networkx to create the graph and calculate PageRank as follows:<br>
+                nx.pagerank(G) where G is the graph built using nx.DiGraph().
+            </p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 40%;" src="images/pip_install.png" alt="pip">
+                <img class="card-img-top img-fluid" style="width: 20%;" src="images/networkx.png" alt="networkx">
+            </div>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 40%;" src="images/pagerank-code.png" alt="pagerank-code">
+            </div>
+            <div class="text-center">
+                <br><br>
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
         </div>
     </div>
 
     <div class="card mb-4">
         <div class="card-body" id="view_10">
-            <h5 class="card-title">Title</h5>
+            <h5 class="card-title text-center">Feedback Relevance</h5>
+            <p>The page where the user sees the selected movies with their information and can rate whether the returned movie is relevant or not :<br></p>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/page-of-relevant.png" alt="page-of-relevant">
+            </div>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 60%;" src="images/table-of-docs.png" alt="table-of-docs">
+            </div>
+            <h6><br>User's rating :</h6>
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/relevance-vector.png" alt="relevance-vector">
+            </div>
+            <h6>The improvement : </h6>
+            <p>After analyzing the users' score data, we found that they chose relevant movies as movies where the actor Robert De Niro plays there, <br>
+                so we would like the next query to display more relevant data for those users. <br>
+                A query that can improve the results:<br>
+            </p>
+            <h6 class="text-center">"Find movies starring actor Robert De Niro".<br><br></class></h6>
+            <div class="text-center">
+                <a href="#" class="back-to-top-button ">Back to Top</a>   
+            </div>
+            
 
-            <a href="#" class="card-link">Back to Top</a>
         </div>
     </div>
 
@@ -231,7 +362,7 @@
 
 
 
-    <div class="footer">
+    <div class="footer text-center">
         <p>&copy; 2024 Result Wizards. All rights reserved.</p>
     </div>
     <script src="script.js"></script>
