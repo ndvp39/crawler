@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Wizards</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-info text-white text-center py-4">
+        <h1>Result Wizards</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_1">view 1</a>  
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_2">view 2</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_3">view 3</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_4">view 4</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_5">view 5</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_6">view 6</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_7">view 7</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_8">view 8</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_9">view 9</a>  
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#view_10">view 10</a>  
+                    </li>  
+
+                    <a class="nav-link btn btn-primary btn-lg text-white" href="index.html">
+                        Go back
+                    </a>
+                </li>     
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_1">
+            <h5 class="card-title">Rotten Tomatoes</h5>
+    
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid w-25 me-2" src="images/logo_web.jpg" alt="logo_web">
+                <img class="card-img-top img-fluid w-25 ms-2" src="images/icon_web.jpg" alt="icon_web">
+            </div>
+            <br>
+            <p>
+                Rotten Tomatoes is a major platform focusing on movie and TV reviews, highlighting user and critic opinions. It provides extensive information on films, including ratings, box office revenue, runtime, and directors. Users can access movie and director ratings, read detailed reviews, and stay updated on the latest film information.
+            </p>
+    
+            <a href="https://www.rottentomatoes.com/" target="_blank" class="mt-2 d-block text-center">Rotten Tomatoes</a>
+            
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+    
+
+    <div class="card mb-4">
+        <div class="card-body d-flex flex-column align-items-center" id="view_2">
+            <h5 class="card-title text-center">Our Queries</h5>
+        
+            <div class="alert alert-info text-center w-75">
+                <strong>Our Key Queries:</strong>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1. The genre with the longest average movie time.</li>
+                    <li class="list-group-item">2. The most successful directors in a certain genre.</li>
+                    <li class="list-group-item">3. The movies with the biggest box office earnings.</li>
+                </ul>
+            </div>
+        
+            <p class="mt-3 text-center">
+                <strong>We defined the queries precisely as follows:</strong>
+            </p>
+    
+            <div class="alert alert-success border border-success rounded p-3 text-center w-75">
+                <strong>Our Final Queries:</strong>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1. Which movie has the longest run time in every genre.</li>
+                    <li class="list-group-item">2. Which movies have the best directors.</li>
+                    <li class="list-group-item">3. Which movie has the highest box office in every genre.</li>
+                </ul>
+            </div>
+        
+            
+        </div>
+        <a href="#" class="card-link">Back to Top</a>
+    </div>
+    
+    
+
+    <div class="card mb-4">
+        <div class="card-body text-center" id="view_3">
+            
+            <div class="mb-3">
+                <a href="https://colab.research.google.com/drive/1o4iye5_s1s5w8DLF-G8-WUXQM6TKTxEf#scrollTo=XAFCjY9QuYnO" class="btn btn-info" target="_blank">Link to Crawler Code</a>
+            </div>
+            
+            
+        </div>
+        <a href="#" class="card-link">Back to Top</a>
+    </div>
+    
+
+    <div class="card mb-4">
+        <div class="card-body text-center" id="view_4">
+            <h5 class="card-title mb-4">Challenges and Tools Used in Our Project</h5>
+            
+            <div class="alert alert-info text-left w-75 mx-auto mb-4">
+                <strong>Initial Challenges:</strong>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">URL Manipulation Limitations: Initially, we tried navigating through pages by modifying the URL, but the site restricts access beyond page 5.</li>
+                    <li class="list-group-item">Selenium Issues: Selenium was used to interact with the site and load additional pages by clicking buttons, but Google Colab restricted this approach over time.</li>
+                </ul>
+            </div>
+    
+            <div class="alert alert-success text-left w-75 mx-auto mb-4">
+                <strong>Final Approach:</strong>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <span>Pyppeteer: Successfully managed button-based page loading without issues.</span>
+                        <img src="images/puppeteer_icon.jpg" alt="Pyppeteer" class="img-thumbnail" style="width: 80px; height: auto;">
+                    </li>
+                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <span>Beautiful Soup and Requests: Utilized for HTML parsing and data extraction.</span>
+                        <img src="images/beautifulsoup_image.jpg" alt="Beautiful Soup" class="img-thumbnail" style="width: 80px; height: auto;">
+                    </li>
+                    <li class="list-group-item d-flex align-items-center justify-content-between">
+                        <span>Memory Management: Due to RAM limitations in Google Colab, we saved the large index in chunks using Excel.</span>
+                        <img src="images/ram_image.jpg" alt="Memory Management" class="img-thumbnail" style="width: 80px; height: auto;">
+                    </li>
+                </ul>
+            </div>
+    
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <div class="card mb-4">
+        <div class="card-body text-center" id="view_5">
+            <h5 class="card-title mb-4">Runtime and improvements</h5>
+            
+            <div class="alert alert-warning text-left w-75 mx-auto mb-4">
+                <strong>Performance Insights:</strong>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Execution Time: Our queries took approximately 3 hours to execute, and indexing also took about 3 hours.</li>
+                    <li class="list-group-item">Time Dependency: The duration depends on the number of pages processed and the number of movies per page.</li>
+                    <li class="list-group-item">Load More Button: Each "Load More" button click introduces a delay due to the page's script.</li>
+                    <li class="list-group-item">Review Loading: Loading additional reviews also relies on the page script, adding to the delay.</li>
+                    <li class="list-group-item">Optimization Suggestion:
+                        <ul>
+                            <li>Start the crawler directly from page 5 (e.g., <a href="https://www.rottentomatoes.com/browse/movies_at_home/genres:action?page=5" target="_blank">https://www.rottentomatoes.com/browse/movies_at_home/genres:action?page=5</a>).</li>
+                            <li>This approach would avoid the need for Pyppeteer until page 5, reducing the time spent on button clicks and utilizing only the HTML of the page.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+    
+    
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_6">
+            <h5 class="card-title">Title</h5>
+
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_7">
+            <h5 class="card-title">Title</h5>
+
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_8">
+            <h5 class="card-title">Title</h5>
+
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_9">
+            <h5 class="card-title">Title</h5>
+
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" id="view_10">
+            <h5 class="card-title">Title</h5>
+
+            <a href="#" class="card-link">Back to Top</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <p>&copy; 2024 Result Wizards. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
