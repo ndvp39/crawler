@@ -8,6 +8,12 @@
 </head>
 <body>
     <style>
+        body {
+            background-image: url("images/background.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
         .back-to-top-button { 
             background-color: #f0f0f0;
             border: 2px solid #000;
@@ -31,7 +37,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
                     <li class="nav-item">
                         <a class="nav-link" href="#view_1">view 1</a>  
                     </li> 
@@ -62,16 +67,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#view_10">view 10</a>  
                     </li>  
-
-                    <a class="nav-link btn btn-primary btn-lg text-white" href="index.html">
-                        Go back
-                    </a>
-                </li>     
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-lg text-white" href="index.html">
+                            Go back
+                        </a>
+                    </li>
             </ul>
         </div>
     </nav>
 
-    <div class="card mb-4">
+    <div class="card mb-4"  style="background-color: rgba(255, 255, 255, 0.7);">
         <div class="card-body" id="view_1">
             <h5 class="card-title">Rotten Tomatoes</h5>
     
@@ -80,21 +85,22 @@
                 <img class="card-img-top img-fluid w-25 ms-2" src="images/icon_web.jpg" alt="icon_web">
             </div>
             <br>
-            <p>
+            <p style="font-weight: bold;">
                 Rotten Tomatoes is a major platform focusing on movie and TV reviews, highlighting user and critic opinions. It provides extensive information on films, including ratings, box office revenue, runtime, and directors. Users can access movie and director ratings, read detailed reviews, and stay updated on the latest film information.
             </p>
+            
     
-            <a href="https://www.rottentomatoes.com/" target="_blank" class="mt-2 d-block text-center">Rotten Tomatoes</a>
+            <a href="https://www.rottentomatoes.com/" target="_blank" class="mt-2 d-block text-center" style="font-weight: bold;">Rotten Tomatoes</a>
             <br>
             
             <div class="text-center">
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
     
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); ">
         <div class="card-body d-flex flex-column align-items-center" id="view_2">
             <h5 class="card-title text-center">Our Queries</h5>
         
@@ -123,13 +129,13 @@
             
         </div>
         <div class="text-center mb-3">
-            <a href="#" class="back-to-top-button ">Back to Top</a>   
+            <a href="" class="back-to-top-button ">Back to Top</a>   
         </div>
     </div>
     
     
 
-    <div class="card mb-5">
+    <div class="card mb-5" style="background-color: rgba(255, 255, 255, 0.7);">
         <div class="card-body text-center" id="view_3">
             
             <div class="mb-1">
@@ -137,19 +143,22 @@
             </div>
         </div>
         <div class="text-center mb-3">
-            <a href="#" class="back-to-top-button ">Back to Top</a>   
+            <a href="" class="back-to-top-button ">Back to Top</a>   
         </div>
     </div>
     
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7);">
         <div class="card-body text-center" id="view_4">
             <h5 class="card-title mb-4">Challenges and Tools Used in Our Project</h5>
             
             <div class="alert alert-info text-left w-75 mx-auto mb-4">
                 <strong>Initial Challenges:</strong>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">URL Manipulation Limitations: Initially, we tried navigating through pages by modifying the URL, but the site restricts access beyond page 5.</li>
+                    <li class="list-group-item">URL Manipulation Limitations: Initially, we tried navigating through pages by modifying the URL, but the site restricts access beyond page 5.
+                        <br>(example url: https://www.rottentomatoes.com/browse/movies_at_home/genres:action?page=5)
+
+                    </li>
                     <li class="list-group-item">Selenium Issues: Selenium was used to interact with the site and load additional pages by clicking buttons, but Google Colab restricted this approach over time.</li>
                 </ul>
             </div>
@@ -167,14 +176,14 @@
                     </li>
                     <li class="list-group-item d-flex align-items-center justify-content-between">
                         <span>Memory Management: Due to RAM limitations in Google Colab, we saved the large index in chunks using Excel.</span>
-                        <img src="images/ram_image.jpg" alt="Memory Management" class="img-thumbnail" style="width: 80px; height: auto;">
+                        <img src="images/ram_image.jpg" alt="Memory Management" class="img-thumbnail" style="width: 180px; height: auto;">
                     </li>
                 </ul>
             </div>
     
             <div class="text-center">
                 <br><br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
@@ -183,7 +192,7 @@
     
     
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7);">
         <div class="card-body text-center" id="view_5">
             <h5 class="card-title mb-4">Runtime and improvements</h5>
             
@@ -205,14 +214,14 @@
     
             <div class="text-center">
                 <br><br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
     
     
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7);">
         <div class="card-body" id="view_6">
             <h5 class="card-title text-center">Index and Inverted Index</h5>
             <div class="d-flex justify-content-center">
@@ -225,12 +234,12 @@
             </div>            
             <div class="text-center">
                 <br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); font-weight: bold;">
         <div class="card-body" id="view_7">
             <h5 class="card-title text-center">TF-IDF for : Which movies have the best directors?</h5>
             <p>We will perform the calculations in an Excel calculation file on the CALCS page.<br>
@@ -272,14 +281,20 @@
             <div class="d-flex justify-content-center">
                 <img class="card-img-top img-fluid" style="width: 75%;" src="images/TF-IDF.png" alt="tf-idf">
             </div>
+            <br><p><br>results after cosine similarity :</p>   
+            <div class="d-flex justify-content-center">
+                 
+                <img class="card-img-top img-fluid" style="width: 75%;" src="images/cosine_similarity_results_image.png" alt="cosine_results">
+            </div>   
+
             <div class="text-center">
                 <br><br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); font-weight: bold;">
         <div class="card-body" id="view_8">
             <h5 class="card-title text-center">Hubs and Authorities</h5>
             <p>In the returned pages there are 'Hubs'.<br>
@@ -290,12 +305,12 @@
             It seems that every recommended movie from the list can be accessed by other movie pages because the recommended movies appear on every movie page.</p>
             <div class="text-center">
                 <br><br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); font-weight: bold;">
         <div class="card-body" id="view_9">
             <h5 class="card-title text-center">PageRank</h5>
             <p>We took 10 pages of movies returned from the query:<br></p>
@@ -322,12 +337,12 @@
             </div>
             <div class="text-center">
                 <br><br>
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
         </div>
     </div>
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); font-weight: bold;">
         <div class="card-body" id="view_10">
             <h5 class="card-title text-center">Feedback Relevance</h5>
             <p>The page where the user sees the selected movies with their information and can rate whether the returned movie is relevant or not :<br></p>
@@ -348,7 +363,7 @@
             </p>
             <h6 class="text-center">"Find movies starring actor Robert De Niro".<br><br></class></h6>
             <div class="text-center">
-                <a href="#" class="back-to-top-button ">Back to Top</a>   
+                <a href="" class="back-to-top-button ">Back to Top</a>   
             </div>
             
 
@@ -357,7 +372,16 @@
 
 
 
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0.7); font-weight: bold;">
+        <div class="card-body" id="view_10">
+            <h5 class="card-title text-center">- Results Wizards -</h5>
+     
+            <div class="d-flex justify-content-center">
+                <img class="card-img-top img-fluid" style="width: 30%;" src="images/thank_you.jpeg" alt="pagerank-code">
+            </div>
 
+        </div>
+    </div>
 
 
 
