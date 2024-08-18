@@ -302,83 +302,6 @@
                  
                 <img class="card-img-top img-fluid" style="width: 75%;" src="images/cosine_similarity_results_image.png" alt="cosine_results">
             </div>  
-            
-            
-            <div>
-                
-
-            <br><br><h5 class="card-title">Recall and Precision Calculations:</h5>
-        
-        <p><strong>Participants:</strong></p>
-        <ul>
-            <li>Participant 1: Electrical Engineering student at Afeka College, knowledgeable in films.</li>
-            <li>Participant 2: Oded's mother, familiar with many veteran directors.</li>
-        </ul>
-        
-        <p><strong>Results:</strong></p>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>10</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>P1</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>NR</td>
-                    <td>R</td>
-                    <td>NR</td>
-                    <td>R</td>
-                    <td>NR</td>
-                    <td>R</td>
-                    <td>R</td>
-                </tr>
-                <tr>
-                    <td>P2</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>NR</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>R</td>
-                    <td>NR</td>
-                    <td>NR</td>
-                    <td>R</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p><strong>Assumptions:</strong> Since it is not possible to objectively know the number of relevant results, we will use heuristics:
-            There are about 75 Academy Award-winning directors, and the average number of films per winning director is about 25. So, let's say there are about 1875 movies that meet the requirement.
-            The Rotten Tomatoes website has about 150,000 movies, of which we reviewed only 10,000. So, let's say we reviewed about 125 films that meet the criteria of a film belonging to a successful director.</p>
-        
-        <p><strong>Calculations:</strong></p>
-        <ul>
-            <li><strong>Precision (P1):</strong> 7/10 = 0.7</li>
-            <li><strong>Recall (P1):</strong> 7/125 = 0.056</li>
-            <li><strong>Precision (P2):</strong> 7/10 = 0.6</li>
-            <li><strong>Recall (P2):</strong> 7/125 = 0.056</li>
-        </ul>
-
-
-
-            </div>
-
-
 
             <div class="text-center">
                 <br><br>
@@ -449,6 +372,83 @@
             <div class="d-flex justify-content-center">
                 <img class="card-img-top img-fluid" style="width: 75%;" src="images/relevance-vector.png" alt="relevance-vector">
             </div>
+            
+                        <div>
+                
+
+                <br><br><h5 class="card-title">Recall and Precision Calculations:</h5>
+            
+            <p><strong>Participants:</strong></p>
+            <ul>
+                <li>Participant 1: Electrical Engineering student at Afeka College, knowledgeable in films.</li>
+                <li>Participant 2: Oded's mother, familiar with many veteran directors.</li>
+            </ul>
+            
+            <p><strong>Results:</strong></p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P1</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>NR</td>
+                        <td>R</td>
+                        <td>NR</td>
+                        <td>R</td>
+                        <td>NR</td>
+                        <td>R</td>
+                        <td>R</td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>NR</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>NR</td>
+                        <td>NR</td>
+                        <td>R</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <p><strong>Assumptions:</strong> Since it is not possible to objectively know the number of relevant results, we will use heuristics:<br>
+                First, we will define the best directors as directors who have won the Oscar.<br>
+                We found that there are about 75 Academy Award-winning directors, and the average number of films per winning director is about 25.<br>
+                So, let's say there are about 1875 movies that meet the requirement.<br>
+                The Rotten Tomatoes website has about 150,000 movies, of which we reviewed only 10,000.<br>
+                So, let's say we reviewed about 125 films that meet the criteria of a film belonging to a successful director.</p>
+            
+            <p><strong>Calculations:</strong></p>
+            <ul>
+                <li><strong>Precision (P1):</strong> 7/10 = 0.7</li>
+                <li><strong>Recall (P1):</strong> 7/125 = 0.056</li>
+                <li><strong>Precision (P2):</strong> 7/10 = 0.6</li>
+                <li><strong>Recall (P2):</strong> 7/125 = 0.056</li>
+            </ul>
+    
+                <br><br>
+                </div>
+
             <h6>The improvement : </h6>
             <p>After analyzing the users' score data, we found that they chose relevant movies as movies where the actor Robert De Niro plays there, <br>
                 so we would like the next query to display more relevant data for those users. <br>
@@ -474,14 +474,13 @@
             </div>
 
         </div>
+        <div class="footer text-center">
+            <p>&copy; 2024 Result Wizards. All rights reserved.</p>
+        </div>
     </div>
 
 
 
-
-    <div class="footer text-center">
-        <p>&copy; 2024 Result Wizards. All rights reserved.</p>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
